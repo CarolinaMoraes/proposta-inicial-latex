@@ -1,0 +1,14 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\setlength{\labelsep}{0pt}\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{v-1.9.7 }
+
+\bibitem[Kanan e Fox 2015]{Kanan2015}
+\abntrefinfo{Kanan e Fox}{KANAN; FOX}{2015}
+{KANAN, T.; FOX, E.~A. Automated arabic text classification with p-stemmer,
+  machine learning, and a tailored news article taxonomy.
+\emph{Virginia Tech}, 2015.}
+
+\end{thebibliography}

@@ -1,0 +1,19 @@
+% Encoding: UTF-8
+
+@Article{Kanan2015,
+  author  = {Tarek Kanan and Edward A. Fox},
+  journal = {Virginia Tech},
+  title   = {Automated Arabic Text Classification with P-Stemmer, Machine Learning, and a Tailored News Article Taxonomy},
+  year    = {2015},
+}
+
+@Electronic{,
+  author   = {Cod3r Cursos},
+  language = {Potuguese},
+  month    = apr,
+  title    = {React JS Curso Rápido Masterclass #1 2020 - 100% Prático!},
+  url      = {https://youtu.be/XQxitgyZ_S4},
+  year     = {2020},
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}
