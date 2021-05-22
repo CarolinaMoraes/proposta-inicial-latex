@@ -1,0 +1,7 @@
+**/*.log
+**/*.dvi
+**/*.idx
+**/*.ps
+**/*.aux
+core
+**/*.synctex.gz
