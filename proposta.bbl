@@ -5,6 +5,11 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{v-1.9.7 }
 
+\bibitem[Afonso 2017]{Alga2017}
+\abntrefinfo{Afonso}{AFONSO}{2017}
+{AFONSO, A. O que é spring boot?
+\emph{AlgaWorks}, 2017.}
+
 \bibitem[Kanan e Fox 2015]{Kanan2015}
 \abntrefinfo{Kanan e Fox}{KANAN; FOX}{2015}
 {KANAN, T.; FOX, E.~A. Automated arabic text classification with p-stemmer,
