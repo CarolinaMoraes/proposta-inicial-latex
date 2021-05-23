@@ -4,10 +4,93 @@
 
 Lorem ipsum dolor sia temet \cite[p. 3]{Kanan2015}.
 
-\section{Solução Proposta}
-
-
-
+\label{sec:objetivos}
 \section{Objetivos}
 
+O obetivo deste projeto é desenvolver um aplicativo multiplataforma,
+focado no gerenciamento de listas de compras compartilhadas e que
+apresente análises quanto à variação de preço para usuários
+brasileiros. Para tal, é necessário que o aplicativo ofereça uma
+interface intuitiva e responsiva, e que os sistemas back-end sejam
+estáveis e rápidos.
+
+Desta forma, uma arquitetura adequada seria uma aplicação em três
+camadas, com um aplciativo front-end capaz de ser acessado tanto nos
+dispositvos Android quanto iOS, e, eventualmente, web; que a api
+disponível ao aplicativo seja bem estruturada conforme os padrões
+REST; que os dados dos usúarios sejam armazenados de maneira segura e
+criptografada; e que uma base dados volumosa seja fornececida de antemão para a
+comodidade dos usuários quanto aos itens de mercado mais comuns no país.
+
+\label{sec:solucao}
+\section{Solução Proposta}
+
+Tendo em vista o problema exposto e as limitações que serão levantadas
+acerca dos concorrentes, propomos como solução o Aplicativo
+\emph{Lixt}, que apresentará as seguintes funcionalidades, expostas em
+ordem de dependências e nível de complexidade:
+
+\begin{itemize}
+\item Login\\
+  O usuário deverá fazer login, de forma segura e privativa, para que
+  possam acessar as funcionalidades que se seguem. Inicialmente, foi
+  pensada uma solução na qual o login poderia ser opcional para as
+  funcionalidades mais básicas, entretanto, isso impõe uma dificuldade
+  na formulação de duas lógicas distintas no front-end.
+\item Construir e gerenciar listas de compras\\
+  O usário deverá ser capaz de criar e destruir listas de compras, adicionar ou
+  remover itens de uma lista, especificar quantos itens devem ser
+  comprados de cada produto e marcar itens como comprados. Esta
+  funcionalidade é considerada a mais básica e essencial para a
+  entrega do MVP.
+\item Gerenciar categorias\\
+  O usuário poderá atribuir categorias aos produtos adicionados,
+  adicionar e deletar categorias, e filtrar itens de uma lista com base nelas.
+\item Compartilhamento De Listas\\
+  O usuário terá a possibilidade de compartilhar listas com outros
+  usuários logados, e mudanças realizadas por um usário devem estar
+  disponíveis para os outros usuários com acesso a lista.
+\item Atribuição de itens para usuários em listas compartilhadas\\
+  O usuário poderá atribuir, em listas compartilhadas, itens a pessoas
+  com acesso a esta lista, como forma de direcionar quem deve comprar
+  cada item.
+\item Comentários em listas compartilhadas\\
+  O usuário poderá adicionar, em um lista que tenha acesso,
+  comentários associados a itens específicos com informações que
+  considerar relevantes àquele produto, e estas notas devem estar
+  disponíveis aos demais usuários que tenham acesso aquela lista
+\item Gerenciamento de compras\\
+  O usuário poderá realizar compras, vinculadas a uma lista e a um
+  mercado, inserindo o preço pago por cada produto e, possivelmente,
+  um desconto associado ao item. Quando o processo de for iniciado, o
+  usuário verá o valor atualizado a ser pago no carrinho conforme os
+  itens forem selecionados como ``pegos''.
+\item Histórico de compras\\
+  As compras realizadas deverão ser salvas e apresentadas conforme
+  solicitadas pelo usuário, e apresentar o valor total em destaque, assim como a
+  varição em relação as compras anteriores no mesmo mercado e com a
+  mesma lista. Também, o preço de cada item deve apresentar a variação
+  em relação ao valor anterior e posterior.
+\item Análise estatística de compras\\
+  Será apresentado ao usuário uma análise estatística dos itens
+  comprados e dos valores pagos, em diversos níveis de
+  especificidade. Planeja-se para a versão final do aplicativo que o
+  usuário possa visulizar as seguintes variações:
+  \begin{itemize}
+  \item a variação de preço das diversas compras, levando em
+    consideração ou não os mercados;
+  \item quantas unidades de um item foi comprado por vez;
+  \item a variação de preço do item a cada compra, levando os mercados
+    em consideração;
+  \item a variação de da média de preços de uma categoria,
+    considerando ou não os mercados;
+  \item a variação da média de preços de uma marca, considerando ou
+    não os mercados.
+  \end{itemize}
+\end{itemize}
+
 \section{Escopo do Projeto}
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "../proposta"
+%%% End:
