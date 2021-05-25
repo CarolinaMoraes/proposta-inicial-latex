@@ -1,13 +1,24 @@
 \chapter{Introdução}
+Comprar é um ato essencial no cotidiano das pessoas. Não apenas por uma questão de sobrevivência, como a compra de alimentos, medicamentos, roupas, imóveis, móveis, entre outros, mas também para lazer.
 
+A compra realizada em plataformas \textit{on-line} também está se tornando tão presente quanto as compras presenciais. De acordo com o site de notícias UOL, 47\% dos brasileiros relataram ter aumentado as compras \textit{on-line} durante a pandemia da COVID-19 \cite{Uol2021}.
+
+Devido a sua importância na vida das pessoas, é necessária uma frequente atenção e gerenciamento de compras, principalmente por conta da questão financeira. Por isso, neste documento, é proposta uma solução que facilite a vida da pessoa compradora, para o gerenciamento e controle de suas compras, individuais ou não, através de criação de listas de compras personalizadas. Inicialmente, a solução visa facilitar as compras alimentícias, feitas em supermercados, feiras, lojas de conveniência, e até mesmo em aplicativos de alimentos, como IFood, Uber Eats, Rappi, e entre outros.
+
+\label{sec:descricao}
 \section{Descrição do Problema}
-
-Lorem ipsum dolor sia temet \cite[p. 3]{Kanan2015}.
+O projeto a ser proposto visa solucionar alguns problemas que a pessoa compradora enfrenta no dia a dia ao fazer compras alimentícias, como, por exemplo:
+\begin{enumerate}
+  \item Dificuldade de lembrar e guardar os preços dos alimentos e produtos, para futura análise que auxilie o comprador a fazer compras mais econômicas e de qualidade.
+  \item Dificuldade em gerenciar e compartilhar dados de compras colaborativas, separação de custos entre as pessoas participantes, decisões de quais produtos serão comprados, e análise de custo total.
+  \item Dificuldade em analisar diversos produtos de diferentes estabelecimentos, de modo a decidir qual o melhor custo-benefício julgado pelo comprador.
+  \item Dificuldade em fazer uma análise geral de compras realizadas em determinado período, que visa facilitar a descoberta de quais produtos são mais comprados, quais são mais caros, a fim de auxiliar o usuário em futuras compras.
+\end{enumerate}
 
 \label{sec:objetivos}
 \section{Objetivos}
 
-O obetivo deste projeto é desenvolver um aplicativo multiplataforma,
+O objetivo deste projeto é desenvolver um aplicativo multiplataforma,
 focado no gerenciamento de listas de compras compartilhadas e que
 apresente análises quanto à variação de preço para usuários
 brasileiros. Para tal, é necessário que o aplicativo ofereça uma
@@ -15,21 +26,24 @@ interface intuitiva e responsiva, e que os sistemas back-end sejam
 estáveis e rápidos.
 
 Desta forma, uma arquitetura adequada seria uma aplicação em três
-camadas, com um aplciativo front-end capaz de ser acessado tanto nos
-dispositvos Android quanto iOS, e, eventualmente, web; que a api
+camadas, com um aplicativo front-end capaz de ser acessado tanto nos
+dispositivos Android quanto iOS, e, eventualmente, web; que a api
 disponível ao aplicativo seja bem estruturada conforme os padrões
-REST; que os dados dos usúarios sejam armazenados de maneira segura e
+REST; que os dados dos usuários sejam armazenados de maneira segura e
 criptografada; e que uma base dados volumosa seja fornececida de antemão para a
 comodidade dos usuários quanto aos itens de mercado mais comuns no país.
 
 \label{sec:solucao}
 \section{Solução Proposta}
 
-Tendo em vista o problema exposto e as limitações que serão levantadas
-acerca dos concorrentes, propomos como solução o Aplicativo
-\emph{Lixt}, que apresentará as seguintes funcionalidades, expostas em
-ordem de dependências e nível de complexidade:
+Tendo em vista os problemas expostos e as limitações que serão levantadas acerca dos concorrentes nos tópicos seguintes, propomos como solução o Aplicativo \emph{Lixt}, que estará disponível em ambos ambientes Android e IOS, para que seja facilmente acessado por usuários que estejam fazendo compras presenciais em supermercados, lojas, entre outros.
 
+O aplicativo irá conter uma gama de funcionalidades para auxiliar o usuário no gerenciamento, controle e análise de compras, que serão melhor exploradas no tópico a seguir.
+
+
+\section{Escopo do Projeto}
+A lista a seguir apresentará as funcionalidades que serão consideradas no escopo do projeto, expostas em
+ordem de dependências e nível de complexidade:
 \begin{itemize}
 \item Login\\
   O usuário deverá fazer login, de forma segura e privativa, para que
@@ -89,7 +103,6 @@ ordem de dependências e nível de complexidade:
   \end{itemize}
 \end{itemize}
 
-\section{Escopo do Projeto}
 %%% Local Variables:
 %%% mode: latex
 %%% TeX-master: "../proposta"
