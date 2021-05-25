@@ -1,16 +1,16 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.5.20)  21 MAY 2021 11:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.5.23)  25 MAY 2021 18:44
 entering extended mode
-**referencias_bibliograficas.tex
+**referencias.tex
 
 ! Emergency stop.
-<*> referencias_bibliograficas.tex
-                                  
+<*> referencias.tex
+                   
 *** (job aborted, file error in nonstop mode)
 
  
 Here is how much of TeX's memory you used:
  2 strings out of 479334
- 36 string characters out of 2857084
+ 21 string characters out of 2857084
  282611 words of memory out of 3000000
  17562 multiletter control sequences out of 15000+200000
  403430 words of font info for 27 fonts, out of 3000000 for 9000

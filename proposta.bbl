@@ -10,10 +10,10 @@
 {AFONSO, A. O que é spring boot?
 \emph{AlgaWorks}, 2017.}
 
-\bibitem[Kanan e Fox 2015]{Kanan2015}
-\abntrefinfo{Kanan e Fox}{KANAN; FOX}{2015}
-{KANAN, T.; FOX, E.~A. Automated arabic text classification with p-stemmer,
-  machine learning, and a tailored news article taxonomy.
-\emph{Virginia Tech}, 2015.}
+\bibitem[Simionato 2021]{Uol2021}
+\abntrefinfo{Simionato}{SIMIONATO}{2021}
+{SIMIONATO, L. 47\% dos brasileiros relatam ter aumentado compras online
+  durante a pandemia.
+\emph{UOL}, 2021.}
 
 \end{thebibliography}

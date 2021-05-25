@@ -35,37 +35,37 @@ Reallocating 'global_strs' (item size: 1) to 4000000 items.
 +---------------------------------------------------------+
 You've used 3 entries,
             6714 wiz_defined-function locations,
-            1213 strings with 9708 characters,
-and the built_in function-call counts, 2082 in all, are:
-= -- 262
-> -- 47
+            1213 strings with 9652 characters,
+and the built_in function-call counts, 1911 in all, are:
+= -- 244
+> -- 30
 < -- 0
-+ -- 63
-- -- 15
-* -- 123
-:= -- 350
++ -- 56
+- -- 10
+* -- 104
+:= -- 333
 add.period$ -- 6
 call.type$ -- 3
-change.case$ -- 21
+change.case$ -- 17
 chr.to.int$ -- 3
 cite$ -- 2
-duplicate$ -- 64
-empty$ -- 131
-format.name$ -- 70
-if$ -- 469
+duplicate$ -- 61
+empty$ -- 130
+format.name$ -- 46
+if$ -- 428
 int.to.chr$ -- 0
 int.to.str$ -- 0
-missing$ -- 43
+missing$ -- 42
 newline$ -- 18
 num.names$ -- 10
-pop$ -- 73
+pop$ -- 68
 preamble$ -- 1
-purify$ -- 10
+purify$ -- 9
 quote$ -- 0
-skip$ -- 146
+skip$ -- 140
 stack$ -- 1
 substring$ -- 83
-swap$ -- 18
+swap$ -- 16
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
