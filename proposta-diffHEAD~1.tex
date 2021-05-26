@@ -1,0 +1,355 @@
+% ------------------------------------------------------------------------
+%DIF LATEXDIFF DIFFERENCE FILE
+%DIF DEL proposta-oldtmp-28549.tex   Tue May 25 21:54:07 2021
+%DIF ADD proposta.tex                Tue May 25 21:35:03 2021
+% ------------------------------------------------------------------------
+% Proposta inicial de projeto na disciplina de PI1A5
+% Equipe TGT
+% 1° semestre de 2021
+% ------------------------------------------------------------------------
+% ------------------------------------------------------------------------
+
+\documentclass[
+	% -- opções da classe memoir --
+%DIF 11-19c11-14
+%DIF < 	12pt,				% tamanho da fonte
+%DIF < 	openright,			% capítulos começam em pág ímpar (insere página vazia caso preciso)
+%DIF < 	oneside,			% twoside para impressão em verso e anverso. Oposto a oneside
+%DIF < 	a4paper,			% tamanho do papel.
+%DIF < 	% -- opções da classe abntex2 --
+%DIF < 	%chapter=TITLE,		% títulos de capítulos convertidos em letras maiúsculas
+%DIF < 	%section=TITLE,		% títulos de seções convertidos em letras maiúsculas
+%DIF < 	%subsection=TITLE,	% títulos de subseções convertidos em letras maiúsculas
+%DIF < 	%subsubsection=TITLE,% títulos de subsubseções convertidos em letras maiúsculas
+%DIF -------
+	12pt, %DIF > 
+	openright, %DIF > 
+	oneside, %DIF > 
+	a4paper, %DIF > 
+%DIF -------
+	% -- opções do pacote babel --
+%DIF 21-24c16-17
+%DIF < 	english,			% idioma adicional para hifenização
+%DIF < 	% french,				% idioma adicional para hifenização
+%DIF < 	% spanish,			% idioma adicional para hifenização
+%DIF < 	brazil				% o último idioma é o principal do documento
+%DIF -------
+	english, %DIF > 
+	brazil %DIF > 
+%DIF -------
+]{abntex2}
+
+%DIF 27-44c20-27
+%DIF < % ---
+%DIF < % Pacotes básicos
+%DIF < % ---
+%DIF < \usepackage{lmodern}			% Usa a fonte Latin Modern			
+%DIF < \usepackage[T1]{fontenc}		% Selecao de codigos de fonte.
+%DIF < \usepackage[utf8]{inputenc}		% Codificacao do documento (conversão automática dos acentos)
+%DIF < \usepackage{lastpage}			% Usado pela Ficha catalográfica
+%DIF < \usepackage{indentfirst}		% Indenta o primeiro parágrafo de cada seção.
+%DIF < \usepackage{color}				% Controle das cores
+%DIF < \usepackage{graphicx}			% Inclusão de gráficos
+%DIF < \usepackage{microtype} 			% para melhorias de justificação
+%DIF < % ---
+%DIF < 
+%DIF < % ---
+%DIF < % Pacotes de citações
+%DIF < % ---
+%DIF < \usepackage[brazilian,hyperpageref]{backref}	 % Paginas com as citações na bibl
+%DIF < \usepackage[alf]{abntex2cite}	% Citações padrão ABNT
+%DIF -------
+\usepackage{lmodern} %DIF > 
+\usepackage[T1]{fontenc} %DIF > 
+\usepackage[utf8]{inputenc} %DIF > 
+\usepackage{lastpage} %DIF > 
+\usepackage{indentfirst} %DIF > 
+\usepackage{color} %DIF > 
+\usepackage{graphicx} %DIF > 
+\usepackage{microtype} %DIF > 
+%DIF -------
+
+%DIF 46-48c29-30
+%DIF < % ---
+%DIF < % CONFIGURAÇÕES DE PACOTES
+%DIF < % ---
+%DIF -------
+\usepackage[brazilian,hyperpageref]{backref} %DIF > 
+\usepackage[alf]{abntex2cite} %DIF > 
+%DIF -------
+
+%DIF 50-52d32
+%DIF < % ---
+%DIF < % Configurações do pacote backref
+%DIF < % Usado sem a opção hyperpageref de backref
+%DIF -------
+\renewcommand{\backrefpagesname}{Citado na(s) página(s):~}
+%DIF 54d33
+%DIF < % Texto padrão antes do número das páginas
+%DIF -------
+\renewcommand{\backref}{}
+%DIF 56d34
+%DIF < % Define os textos da citação
+%DIF -------
+\renewcommand*{\backrefalt}[4]{
+	\ifcase #1 %
+		Nenhuma citação no texto.%
+	\or
+		Citado na página #2.%
+	\else
+		Citado #1 vezes nas páginas #2.%
+	\fi}%
+%DIF 65-70d42
+%DIF < % ---
+%DIF < 
+%DIF < 
+%DIF < 
+%DIF < % Informações de dados para CAPA e FOLHA DE ROSTO
+%DIF < %---
+%DIF -------
+\include{capitulos/capa_contracapa}
+
+%DIF 73-77d44
+%DIF < 
+%DIF < % ---
+%DIF < % Configurações de aparência do PDF final
+%DIF < 
+%DIF < % alterando o aspecto da cor azul
+%DIF -------
+\definecolor{blue}{RGB}{41,5,195}
+
+%DIF 80d46
+%DIF < % informações do PDF
+%DIF -------
+\makeatletter
+\hypersetup{
+%DIF 83d48
+%DIF <      	%pagebackref=true,
+%DIF -------
+  pdftitle={\@title},
+  pdfauthor={\@author},
+  pdfsubject={\imprimirpreambulo},
+  pdfcreator={LaTeX with abnTeX2},
+  pdfkeywords={abnt}{latex}{abntex}{abntex2}{trabalho acadêmico},
+%DIF 89-92c53-56
+%DIF < 		colorlinks=true,       		% false: boxed links; true: colored links
+%DIF <     	linkcolor=blue,          	% color of internal links
+%DIF <     	citecolor=blue,        		% color of links to bibliography
+%DIF <     	filecolor=magenta,      		% color of file links
+%DIF -------
+  colorlinks=true, %DIF > 
+  linkcolor=blue, %DIF > 
+  citecolor=blue, %DIF > 
+  filecolor=magenta, %DIF > 
+%DIF -------
+  urlcolor=blue,
+  bookmarksdepth=4
+}
+\makeatother
+%DIF 97-101d61
+%DIF < % ---
+%DIF < 
+%DIF < % ---
+%DIF < % Espaçamentos entre linhas e parágrafos
+%DIF < % ---
+%DIF -------
+
+%DIF 103d62
+%DIF < % O tamanho do parágrafo é dado por:
+%DIF -------
+\setlength{\parindent}{1.3cm}
+%DIF < 
+%DIF -------
+\setlength{\parskip}{0.2cm} %DIF > 
+%DIF < % Controle do espaçamento entre um parágrafo e outro:
+%DIF < \setlength{\parskip}{0.2cm}  % tente também \onelineskip
+%DIF < 
+%DIF < 
+%DIF < 
+%DIF < % ----
+%DIF < % Início do documento
+%DIF < % ----
+%DIF PREAMBLE EXTENSION ADDED BY LATEXDIFF
+%DIF UNDERLINE PREAMBLE %DIF PREAMBLE
+\RequirePackage[normalem]{ulem} %DIF PREAMBLE
+\RequirePackage{color}\definecolor{RED}{rgb}{1,0,0}\definecolor{BLUE}{rgb}{0,0,1} %DIF PREAMBLE
+\providecommand{\DIFadd}[1]{{\protect\color{blue}\uwave{#1}}} %DIF PREAMBLE
+\providecommand{\DIFdel}[1]{{\protect\color{red}\sout{#1}}}                      %DIF PREAMBLE
+%DIF SAFE PREAMBLE %DIF PREAMBLE
+\providecommand{\DIFaddbegin}{} %DIF PREAMBLE
+\providecommand{\DIFaddend}{} %DIF PREAMBLE
+\providecommand{\DIFdelbegin}{} %DIF PREAMBLE
+\providecommand{\DIFdelend}{} %DIF PREAMBLE
+%DIF FLOATSAFE PREAMBLE %DIF PREAMBLE
+\providecommand{\DIFaddFL}[1]{\DIFadd{#1}} %DIF PREAMBLE
+\providecommand{\DIFdelFL}[1]{\DIFdel{#1}} %DIF PREAMBLE
+\providecommand{\DIFaddbeginFL}{} %DIF PREAMBLE
+\providecommand{\DIFaddendFL}{} %DIF PREAMBLE
+\providecommand{\DIFdelbeginFL}{} %DIF PREAMBLE
+\providecommand{\DIFdelendFL}{} %DIF PREAMBLE
+\newcommand{\DIFscaledelfig}{0.5}
+%DIF HIGHLIGHTGRAPHICS PREAMBLE %DIF PREAMBLE
+\RequirePackage{settobox} %DIF PREAMBLE
+\RequirePackage{letltxmacro} %DIF PREAMBLE
+\newsavebox{\DIFdelgraphicsbox} %DIF PREAMBLE
+\newlength{\DIFdelgraphicswidth} %DIF PREAMBLE
+\newlength{\DIFdelgraphicsheight} %DIF PREAMBLE
+% store original definition of \includegraphics %DIF PREAMBLE
+\LetLtxMacro{\DIFOincludegraphics}{\includegraphics} %DIF PREAMBLE
+\newcommand{\DIFaddincludegraphics}[2][]{{\color{blue}\fbox{\DIFOincludegraphics[#1]{#2}}}} %DIF PREAMBLE
+\newcommand{\DIFdelincludegraphics}[2][]{% %DIF PREAMBLE
+\sbox{\DIFdelgraphicsbox}{\DIFOincludegraphics[#1]{#2}}% %DIF PREAMBLE
+\settoboxwidth{\DIFdelgraphicswidth}{\DIFdelgraphicsbox} %DIF PREAMBLE
+\settoboxtotalheight{\DIFdelgraphicsheight}{\DIFdelgraphicsbox} %DIF PREAMBLE
+\scalebox{\DIFscaledelfig}{% %DIF PREAMBLE
+\parbox[b]{\DIFdelgraphicswidth}{\usebox{\DIFdelgraphicsbox}\\[-\baselineskip] \rule{\DIFdelgraphicswidth}{0em}}\llap{\resizebox{\DIFdelgraphicswidth}{\DIFdelgraphicsheight}{% %DIF PREAMBLE
+\setlength{\unitlength}{\DIFdelgraphicswidth}% %DIF PREAMBLE
+\begin{picture}(1,1)% %DIF PREAMBLE
+\thicklines\linethickness{2pt} %DIF PREAMBLE
+{\color[rgb]{1,0,0}\put(0,0){\framebox(1,1){}}}% %DIF PREAMBLE
+{\color[rgb]{1,0,0}\put(0,0){\line( 1,1){1}}}% %DIF PREAMBLE
+{\color[rgb]{1,0,0}\put(0,1){\line(1,-1){1}}}% %DIF PREAMBLE
+\end{picture}% %DIF PREAMBLE
+}\hspace*{3pt}}} %DIF PREAMBLE
+} %DIF PREAMBLE
+\LetLtxMacro{\DIFOaddbegin}{\DIFaddbegin} %DIF PREAMBLE
+\LetLtxMacro{\DIFOaddend}{\DIFaddend} %DIF PREAMBLE
+\LetLtxMacro{\DIFOdelbegin}{\DIFdelbegin} %DIF PREAMBLE
+\LetLtxMacro{\DIFOdelend}{\DIFdelend} %DIF PREAMBLE
+\DeclareRobustCommand{\DIFaddbegin}{\DIFOaddbegin \let\includegraphics\DIFaddincludegraphics} %DIF PREAMBLE
+\DeclareRobustCommand{\DIFaddend}{\DIFOaddend \let\includegraphics\DIFOincludegraphics} %DIF PREAMBLE
+\DeclareRobustCommand{\DIFdelbegin}{\DIFOdelbegin \let\includegraphics\DIFdelincludegraphics} %DIF PREAMBLE
+\DeclareRobustCommand{\DIFdelend}{\DIFOaddend \let\includegraphics\DIFOincludegraphics} %DIF PREAMBLE
+\LetLtxMacro{\DIFOaddbeginFL}{\DIFaddbeginFL} %DIF PREAMBLE
+\LetLtxMacro{\DIFOaddendFL}{\DIFaddendFL} %DIF PREAMBLE
+\LetLtxMacro{\DIFOdelbeginFL}{\DIFdelbeginFL} %DIF PREAMBLE
+\LetLtxMacro{\DIFOdelendFL}{\DIFdelendFL} %DIF PREAMBLE
+\DeclareRobustCommand{\DIFaddbeginFL}{\DIFOaddbeginFL \let\includegraphics\DIFaddincludegraphics} %DIF PREAMBLE
+\DeclareRobustCommand{\DIFaddendFL}{\DIFOaddendFL \let\includegraphics\DIFOincludegraphics} %DIF PREAMBLE
+\DeclareRobustCommand{\DIFdelbeginFL}{\DIFOdelbeginFL \let\includegraphics\DIFdelincludegraphics} %DIF PREAMBLE
+\DeclareRobustCommand{\DIFdelendFL}{\DIFOaddendFL \let\includegraphics\DIFOincludegraphics} %DIF PREAMBLE
+%DIF END PREAMBLE EXTENSION ADDED BY LATEXDIFF
+
+\begin{document}
+
+%DIF <  Seleciona o idioma do documento (conforme pacotes do babel)
+%DIF < \selectlanguage{english}
+\selectlanguage{brazil}
+\DIFdelbegin %DIFDELCMD < 
+
+%DIFDELCMD < %%%
+%DIF <  Retira espaço extra obsoleto entre as frases.
+\DIFdelend \frenchspacing
+
+%DIF <  ----------------------------------------------------------
+%DIF <  ELEMENTOS PRÉ-TEXTUAIS
+%DIF <  ----------------------------------------------------------
+%DIF <  \pretextual
+\DIFdelbegin %DIFDELCMD < 
+
+%DIFDELCMD < %%%
+%DIF <  ---
+%DIF <  Capa
+%DIF <  ---
+\DIFdelend \imprimircapa
+%DIF <  ---
+\DIFdelbegin %DIFDELCMD < 
+
+%DIFDELCMD < %%%
+%DIF <  ---
+%DIF <  Folha de rosto
+%DIF <  (o * indica que haverá a ficha bibliográfica)
+%DIF <  ---
+\DIFdelend \imprimirfolhaderosto*
+%DIF <  ---
+
+%DIF <  ----------------------------------------------------------
+%DIF <  ELEMENTOS TEXTUAIS
+%DIF <  ----------------------------------------------------------
+\textual
+
+%DIF < -----------------------------------------------------------
+%DIF <  CONTEÚDO
+%DIF < -----------------------------------------------------------
+\include{capitulos/introducao}
+%DIF <  PRIMEIRO CAPÍTULO
+
+\include{capitulos/analise_concorrentes}
+
+\include{capitulos/tecnologias_aplicadas}
+
+\include{capitulos/gerenciamento_projeto}
+%DIF <  ÚLTIMO CAPÍTULO
+%DIF < -----------------------------------------------------------
+
+%DIF <  ----------------------------------------------------------
+%DIF <  Finaliza a parte no bookmark do PDF
+%DIF <  para que se inicie o bookmark na raiz
+%DIF <  e adiciona espaço de parte no Sumário
+%DIF <  ----------------------------------------------------------
+\phantompart
+
+%DIF <  ---
+%DIF <  Conclusão
+%DIF <  ---
+%DIF < \include{capitulos/conclusao}
+\DIFdelbegin %DIFDELCMD < 
+
+%DIFDELCMD < %%%
+%DIF <  ----------------------------------------------------------
+%DIF <  ELEMENTOS PÓS-TEXTUAIS
+%DIF <  ----------------------------------------------------------
+\DIFdelend \postextual
+%DIF <  ----------------------------------------------------------
+\DIFdelbegin %DIFDELCMD < 
+
+%DIFDELCMD < %%%
+%DIF <  ----------------------------------------------------------
+%DIF <  Referências bibliográficas
+%DIF <  ----------------------------------------------------------
+\DIFdelend \bibliography{referencias/referencias}
+
+ %DIF <  ----------------------------------------------------------
+%DIF <  Glossário
+%DIF <  ----------------------------------------------------------
+%DIF < 
+%DIF <  Consulte o manual da classe abntex2 para orientações sobre o glossário.
+%DIF < 
+%DIF < \glossary
+\DIFdelbegin %DIFDELCMD < 
+
+%DIFDELCMD < %%%
+%DIF <  ----------------------------------------------------------
+%DIF <  Apêndices
+%DIF <  ----------------------------------------------------------
+%DIFDELCMD < 
+
+%DIFDELCMD < %%%
+%DIF <  ---
+%DIF <  Inicia os apêndices
+%DIF <  ---
+%DIF < \include{capitulos/apendice}
+%DIF <  ---
+%DIFDELCMD < 
+
+%DIFDELCMD < %%%
+%DIF <  ----------------------------------------------------------
+%DIF <  Anexos
+%DIF <  ----------------------------------------------------------
+%DIFDELCMD < 
+
+%DIFDELCMD < %%%
+%DIF <  ---
+%DIF <  Inicia os anexos
+%DIF <  ---
+%DIF < \include{capitulos/anexo}
+%DIFDELCMD < 
+
+%DIFDELCMD < %%%
+%DIF <  Fim do documento
+ \DIFdelend\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
